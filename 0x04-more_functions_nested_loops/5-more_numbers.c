@@ -2,18 +2,19 @@
 
 /**
  * more_numbers - print more num
+ * Return: 0
  */
 
 void more_numbers(void)
 {
 	int i;
-	int j;
+	int k;
 
 	for (i = 1; i <= 10; i++)
 	{
-		for (j = 0; j <= 14; j++)
+		for (k = 0; k <= 14; k++)
 		{
-			if (j >= 10)
+			if (k >= 10)
 			_putchar('1');
 			_putchar(j % 10 + 10);
 		}
