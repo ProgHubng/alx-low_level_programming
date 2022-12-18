@@ -1,4 +1,5 @@
 #include "stdio.h"
+#include "main.h"
 
 /**
  * main - prints Buzz each numbers of 3 and 5
@@ -13,21 +14,23 @@ int main(void)
 	for (i = 2; i <= 100; i++)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
-		{
-			printf(" FizzBizz");
-		}
+		
+			printf("FizzBizz");
+		
 		else if (i % 3 == 0)
-		{
-			printf(" Fizz");
-		}
+		
+			printf("Fizz");
+		
 		else if (i % 5 == 0)
-		{
-			printf(" Buzz");
-		}
+		
+			printf("Buzz");
+		
 		else
-		{
-			printf(" %d", i);
-		}
+		
+			printf(" %i", i);
+		
+		if (i < 100)
+			printf(" ");
 	}
 	printf('\n');
 	return (0);
