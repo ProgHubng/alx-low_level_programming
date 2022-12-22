@@ -12,6 +12,8 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i, int l;
 
+	i = 0;
+	l = 0;
 	while (src[i])
 		l++;
 
