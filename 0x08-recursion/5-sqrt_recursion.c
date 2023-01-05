@@ -32,8 +32,11 @@ int _evaluate(int i, int n)
  */
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
+	int i;
+
+	i = 0;
+	if (i < 0)
 		return (-1);
 	else
-		return (_evaluate(n, 0));
+		return (_evaluate(i, n));
 }
